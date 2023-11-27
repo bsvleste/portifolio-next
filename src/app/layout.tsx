@@ -1,8 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ActiveLink } from '@/components/ActiveLink'
+import bsvCode from '../../public/bsvcode.png'
+import Image from 'next/image'
+const roboto = Roboto({
+  weight: ['100', '300', '400', '500', "700", "900"],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +23,32 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <body className={`${roboto.variable} bg-app`}>
+        <div className='h-screen'>
+          <header className=' w-full sm:h-20 m-auto max-w-template  grid grid-cols-1 sm:grid-cols-app '>
+            <div className='flex justify-start gap-2 items-center mt-1'>
+              <Image src={bsvCode} alt="desenvolvendo o futuro linha por linha" />
+            </div>
+            <nav className="flex justify-start  sm:justify-end items-center gap-4 ">
+              <ActiveLink
+                href="/"
+                activeClassName='
+              font-medium
+              font-sans
+              text-zinc-100
+              border-b
+              border-zinc-300'
+              >
+                <p>Home</p>
+              </ActiveLink>
+              <ActiveLink href="/contato" activeClassName='font-medium font-sans text-zinc-100 border-b border-zinc-300'>
+                <p>Contato</p>
+              </ActiveLink>
+            </nav>
+          </header>
+          {children}
+        </div>
+      </body >
+    </html >
   )
 }
