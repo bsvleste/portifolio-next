@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode:'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,6 +14,7 @@ const config: Config = {
           '0%, 100%': { transform: 'scale(1)' },
         }
       }, 
+      
       animation:{
         wiggle:'animationBorder 2s linear infinite'
       },
@@ -20,13 +22,15 @@ const config: Config = {
         sans:['var(--font-roboto)']
       },
       gridTemplateColumns:{
-        app:'minmax(18rem,30rem ) 1fr'
+        app:"minmax(18rem,20rem ) 1fr",
+        profile:"max-content 1fr min-content",
+        form:"minmax(7.5rem,17.5rem ) minmax(25rem, 1fr) minmax(0, 15rem)"
       },
       maxWidth:{
-        template:'min(100% - 15px,1180px);'
+        app:"708px"
       },
       backgroundColor:{
-        app:"#202024"
+        app:"#27272a"
       }
     },
   },

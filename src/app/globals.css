@@ -1,16 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body{
+    font-family:var(--font-roboto);
+    transition: all 0.5s ease 0s;
+}
 @layer components   {
-  
-  .cool-link {
+    
+    nav a div{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        gap:16px;
+        padding: 14px 14px;
+        color:#fff;
+        font-weight: bold;
+        width:100%;
+    }
+    nav a div:hover {
+        background: rgba(0,0,0,.1);
+        color:#8b5cf6;
+        font-weight: bold;
+        border-radius:8px;
+        
+    }    
+    .active {
+        width:100%;
+      
+        cursor:default;
+        font-family:var(--font-roboto);
+        font-weight: bold;
+        border-radius:8px;
+    }
+    .active span {
+        color:#8b5cf6;
+    }
+    .active svg {
+        color:#8b5cf6;
+    }
+  /* nav a {
     display: inline-block;
     color: #f1f1f1;
     text-decoration: none;
 }
 
-.cool-link::after {
+nav a::after {
     content: '';
     display: block;
     width: 0;
@@ -19,9 +53,10 @@
     transition: width .3s;
 }
 
-.cool-link:hover::after {
+nav a:hover::after {
     width: 100%;
     //transition: width .3s;
 }
 
-} 
+*/
+}  
