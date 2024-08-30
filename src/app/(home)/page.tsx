@@ -1,7 +1,7 @@
 import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import bsvConding from '@/assets/bsvcoding.png'
-export default function Principal() {
+export default function Home() {
   return (
     <div className='h-screen  flex justify-around items-center w-full flex-col sm:flex-row' id="#home">
       <div className="flex gap-4 flex-col">

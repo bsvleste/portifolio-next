@@ -7,31 +7,31 @@ import { roboto } from '../Fonts'
 export function MainNavigation() {
   return (
     <nav className={`space-y-0.5`}>
-      <ActiveLink href='/#home' activeClassName="active" >
+      <ActiveLink href='/' activeClassName="active" >
         <div>
           <Home />
           <span>Home</span>
         </div>
       </ActiveLink>
-      <ActiveLink href='/#sobre' activeClassName="active">
+      <ActiveLink href='/sobre' activeClassName="active">
         <div>
           <Info />
           <span>Sobre</span>
         </div>
       </ActiveLink>
-      <ActiveLink href='/#portifolio' activeClassName="active">
+      <ActiveLink href='/portifolio' activeClassName="active">
         <div>
           <FolderOpen />
           <span>Portfólio</span>
         </div>
       </ActiveLink>
-      <ActiveLink href='/#techs' activeClassName="active">
+      <ActiveLink href='/techs' activeClassName="active">
         <div>
           <Code2 />
           <span>Minhas Techs</span>
         </div>
       </ActiveLink>
-      <ActiveLink href='/#experiencia' activeClassName="active">
+      <ActiveLink href='/experiencia' activeClassName="active">
         <div>
           <BadgeDollarSign />
           <span>Experiencia Profissional</span>

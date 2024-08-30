@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Roboto } from 'next/font/google'
 import './globals.css'
 import { Sidebar } from '@/components/Sidebar'
+import { Menu } from '@/components/menu'
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', "700", "900"],
   subsets: ['latin'],
