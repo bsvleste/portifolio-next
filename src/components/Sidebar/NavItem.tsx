@@ -13,7 +13,6 @@ export function NavItem({ title, icon: Icon }: NavItemProps) {
     )}>
       <Icon className='w-5 h-5 text-zinc-500 group-hover:text-violet-500' />
       <span className='font-medium text-zinc-100 group-hover:text-violet-500'>{title}</span>
-
     </a>
 
   )

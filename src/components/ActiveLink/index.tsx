@@ -10,7 +10,7 @@ interface ActiveLinkProps extends LinkProps {
 }
 export function ActiveLink({ children, activeClassName, ...props }: ActiveLinkProps) {
   const asPath = usePathname();
-  const className = asPath === props.href ? activeClassName : '';
+  const className = asPath === props.href ? 'text-esmerald-500' : ' text-zinc-400 hover:text-zinc-200';
   return (
     <Link  {...props}>
       {cloneElement(children, {
