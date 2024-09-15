@@ -20,13 +20,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${roboto.className} antialiased scroll-smooth`} >
+    <html lang="en" className={`${roboto.className} antialiased scroll-smooth   `} >
       <body>
-        <div className='min-h-screen bg-app lg:grid lg:grid-cols-app '>
-          <Sidebar />
-          <main className='mt-32 px-4 lg:mt-0  lg:col-start-2 lg:px-8'>
+        <div>
             {children}
-          </main>
         </div>
       </body >
     </html >

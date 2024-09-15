@@ -1,10 +1,16 @@
-import { FileText, Github, Linkedin } from "lucide-react";
-import Image from "next/image";
-import bsvConding from '@/assets/bsvcoding.png'
-import Link from "next/link";
+import { Header } from "@/components/header";
+import { HeroSection } from "@/section/hero-section";
 export default function Home() {
   return (
-    <div className='h-screen  flex justify-around items-center w-full flex-col sm:flex-row' id="#home">
+    <div className='flex justify-center font-sans'>
+      <Header />
+      <HeroSection />
+    </div> 
+  )
+}
+
+/* 
+<div className='h-screen  flex justify-around items-center w-full flex-col sm:flex-row' id="#home">
       <div className="flex gap-4 flex-col">
         <div>
           <p className="text-zinc-200  font-normal leading-8">Olá eu sou,</p>
@@ -31,6 +37,4 @@ export default function Home() {
       <div className='order-1 sm:order-2  hidden sm:flex '>
         <Image src={bsvConding} alt='bsvConding' className="object-scale-down md:w-[380px] md:h-[380px]" />
       </div>
-    </div>
-  )
-}
+    </div> */
