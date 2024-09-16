@@ -1,5 +1,6 @@
 export function Header() {
   return (
+
     <div className="flex justify-center fixed items-center top-3 z-50">
       <nav className="flex gap-1 p-0.5 border  border-zinc-100/20 rounded-full bg-zinc-100/10 backdrop-blur">
         <a href="" className="nav-item ">Home</a>

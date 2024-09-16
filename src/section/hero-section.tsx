@@ -4,7 +4,7 @@ import { ArrowDown, File, FileDown, Sparkle } from "lucide-react";
 import { HeroOrbit } from "@/components/hero-orbit";
 export function HeroSection() {
   return (
-    <div className="py-32 md:py-64 relative lg:py-32  z-0 " >
+    <div className="py-32 md:py-64 relative z-0 " >
       <div className="md:hero-ring md:w-[670px] md:h-[670px]"></div>
       <div className="md:hero-ring md:w-[870px] md:h-[870px]"></div>
       <div className="md:hero-ring md:w-[1070px]  md:h-[1070px]"></div>
