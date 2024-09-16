@@ -5,7 +5,7 @@ export default function Home() {
     <div className='flex justify-center font-sans'>
       <Header />
       <HeroSection />
-    </div> 
+    </div>
   )
 }
 
